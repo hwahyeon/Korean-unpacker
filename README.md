@@ -10,7 +10,12 @@ npm install korean-unpacker
 ```
 
 ## Usage
+```javascript
+const hangul = require('korean-unpacker');
 
+console.log(hangul.unpack('안녕')); // 'ㅇㅏㄴㄴㅕㅇ'
+```
+OR
 ```javascript
 import hangul from 'korean-unpacker'
 
