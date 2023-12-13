@@ -16,6 +16,18 @@ import hangul from 'korean-unpacker'
 
 console.log(hangul.unpack('안녕')); // 'ㅇㅏㄴㄴㅕㅇ'
 ```
+### 쌍자음
+```javascript
+console.log(hangul.unpack('까치')); // 'ㄱㄱㅏㅊㅣ'
+```
+### 겹받침
+```javascript
+console.log(hangul.unpack('삵')); // 'ㅅㅏㄹㄱ'
+```
+### 겹모음
+```javascript
+console.log(hangul.unpack('왜?')); // 'ㅇㅗㅐ?'
+```
 
 ## API
 
