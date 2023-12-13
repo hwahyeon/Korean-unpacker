@@ -1,0 +1,27 @@
+{
+  "name": "korean-unpacker",
+  "version": "1.0.0",
+  "description": "한글 문자열을 자음과 모음으로 분리하는 NPM 패키지",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwahyeon/korean-unpacker.git"
+  },
+  "keywords": [
+    "hangul",
+    "korean",
+    "decompose"
+  ],
+  "author": "hwahyeon <hwahyeon.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hwahyeon/korean-unpacker/issues"
+  },
+  "homepage": "https://github.com/hwahyeon/korean-unpacker#readme"
+}
