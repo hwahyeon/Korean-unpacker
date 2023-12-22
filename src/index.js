@@ -2,6 +2,12 @@
 //   return text.replace(/\d+/g, '');
 // }
 
+/**
+ * Decomposes Korean character into its constituent parts.
+ * 
+ * @param {string} korean - The Korean character to decompose.
+ * @returns {string} The decomposed character.
+ */
 function decompose(korean) {
   const LEADING_CONSONANTS = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ";
   const VOWELS = [
@@ -76,6 +82,13 @@ function decompose(korean) {
   }
 }
 
+/**
+ * Decomposes Korean in a given string into its constituent parts.
+ * Converts non-string inputs into strings before processing.
+ * 
+ * @param {any} input - The input to be unpacked. If it's not a string, it will be converted to a string.
+ * @returns {string} The unpacked string with each Korean character decomposed.
+ */
 function unpack(input) {
   const string = String(input);
   return Array.from(string).map(ch => decompose(ch)).join('');
