@@ -76,7 +76,8 @@ function decompose(korean) {
   }
 }
 
-function unpack(string) {
+function unpack(input) {
+  const string = String(input);
   return Array.from(string).map(ch => decompose(ch)).join('');
 }
 
